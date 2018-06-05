@@ -11,12 +11,23 @@ import {
   Text,
   View
 } from 'react-native';
-import BaiduMapDemo from './app/BaiduMapDemo';
+import BaiduMapDemo from './app/src/BaiduMapDemo';
 
 export default class ShiGu extends Component {
   render() {
     return (
-        <BaiduMapDemo/>
+      <View style={styles.container}>
+        <Text style={styles.welcome}>
+          Welcome to React Native!
+        </Text>
+        <Text style={styles.instructions}>
+          To get started, edit index.android.js
+        </Text>
+        <Text style={styles.instructions}>
+          Double tap R on your keyboard to reload,{'\n'}
+          Shake or press menu button for dev menu
+        </Text>
+      </View>
     );
   }
 }
