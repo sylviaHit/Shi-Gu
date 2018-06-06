@@ -11,9 +11,10 @@ import Scene from './src/pages/scene/Scene';
 import BaiduMapDemo from './src/BaiduMapDemo';
 import { createStackNavigator } from 'react-navigation';
 
+
 const RootStack = createStackNavigator(
     {
-        Home: { screen: BaiduMapDemo },
+        Home: { screen: HomePage },
         Poetry:{ screen: Poetry },
         Person: { screen: Person },
         Road: { screen: Road },
