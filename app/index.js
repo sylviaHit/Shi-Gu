@@ -6,7 +6,7 @@ import HomePage from './src/pages/home/HomePage';
 import Poetry from './src/pages/poetry/Poetry';
 import Person from './src/pages/person/Person';
 import Road from './src/pages/road/Road';
-import Culture from './src/pages/culture/Culture';
+import CultureMap from './src/pages/culture-map/CultureMap';
 import Scene from './src/pages/scene/Scene';
 import BaiduMapDemo from './src/BaiduMapDemo';
 import { createStackNavigator } from 'react-navigation';
@@ -18,11 +18,11 @@ const RootStack = createStackNavigator(
         Poetry:{ screen: Poetry },
         Person: { screen: Person },
         Road: { screen: Road },
-        Culture:{ screen: Culture },
+        CultureMap:{ screen: CultureMap },
         Scene: { screen: Scene }
     },
     {
-        initialRouteName: 'Home',
+        initialRouteName: 'CultureMap',
         mode: 'modal',
         headerMode: 'none',
     }
