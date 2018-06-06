@@ -24,7 +24,7 @@ const RootStack = createStackNavigator(
     {
         initialRouteName: 'CultureMap',
         mode: 'modal',
-        headerMode: 'none',
+        // headerMode: 'none',
     }
 );
 
