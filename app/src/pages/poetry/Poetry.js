@@ -6,7 +6,7 @@ import {
     StyleSheet,
     View,
     Text,
-    ImageBackground,
+    Image,
 } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 
@@ -23,9 +23,9 @@ export default class Poetry extends Component<Props> {
     render() {
         let colors = ['#e2dbcb', '#dbd4c4', '#e5ddce'];
         return (
-            <ImageBackground style={styles.wrap} source= {require('../../images/poetry-bg-2.jpg')}>
+            <Image style={styles.wrap} source= {require('../../images/poetry-bg-2.jpg')}>
 
-            </ImageBackground>
+            </Image>
         );
     }
 }
@@ -33,6 +33,7 @@ const styles = StyleSheet.create({
     wrap: {
         flex:1,
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        width: null,
     },
 });

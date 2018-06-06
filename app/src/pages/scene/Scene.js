@@ -6,7 +6,7 @@ import {
     StyleSheet,
     View,
     Text,
-    ImageBackground,
+    Image,
 } from 'react-native';
 
 type Props = {};
@@ -21,9 +21,9 @@ export default class Scene extends Component<Props> {
 
     render() {
         return (
-            <ImageBackground style={styles.wrap} source= {require('../../images/poetry-bg-3.jpg')}>
+            <Image style={styles.wrap} source= {require('../../images/poetry-bg-3.jpg')}>
 
-            </ImageBackground>
+            </Image>
         );
     }
 }
@@ -31,6 +31,7 @@ const styles = StyleSheet.create({
     wrap: {
         flex:1,
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        width: null,
     },
 });

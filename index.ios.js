@@ -11,18 +11,22 @@ import {
     Text,
     View
 } from 'react-native';
-import BaiduMapDemo from './app/src/BaiduMapDemo';
 import HomePage from './app/src/pages/home/HomePage';
+import Poetry from './app/src/pages/poetry/Poetry';
+import Person from './app/src/pages/person/Person';
+import Road from './app/src/pages/road/Road';
+import Culture from './app/src/pages/culture/Culture';
+import Scene from './app/src/pages/scene/Scene';
 import { createStackNavigator } from 'react-navigation';
 
 const RootStack = createStackNavigator(
     {
         Home: { screen: HomePage },
-        // Poetry:{ screen: Poetry },
-        // Person: { screen: Person },
-        // Road: { screen: Road },
-        // Culture:{ screen: Culture },
-        // Scene: { screen: Scene }
+        Poetry:{ screen: Poetry },
+        Person: { screen: Person },
+        Road: { screen: Road },
+        Culture:{ screen: Culture },
+        Scene: { screen: Scene }
     },
     {
         initialRouteName: 'Home',
