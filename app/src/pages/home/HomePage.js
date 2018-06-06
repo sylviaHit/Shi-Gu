@@ -4,10 +4,7 @@ import React ,{
 }from 'react';
 import {Animated, View, Easing, Image, TouchableOpacity, Dimensions, StyleSheet, Text} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
-import { createStackNavigator } from 'react-navigation';
 import Person from "../person/Person";
-import { service } from "../../utils/service";
-
 
 export default class HomePage extends Component{
     constructor (props) {
@@ -43,7 +40,7 @@ export default class HomePage extends Component{
             ['#f3b41b', '#f0f32e', '#b9937e'],
             ['#783e3c', '#ff2511', '#88222d']
         ];
-        let pages=['Poetry', 'Person', 'Road', 'Culture', 'Scene'];
+        let pages=['Poetry', 'Person', 'Road', 'CultureMap', 'Scene'];
         return (
             <Image source={require('../../images/poetry-bg-3.jpg')} style={styles.backgroundImage} >
                 <Animated.View

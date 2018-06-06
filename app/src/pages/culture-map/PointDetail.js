@@ -1,5 +1,5 @@
 /**
- * homePage
+ * 故居点详情页
  */
 import React, { Component } from 'react';
 import {
@@ -10,7 +10,7 @@ import {
 } from 'react-native';
 
 type Props = {};
-export default class Scene extends Component<Props> {
+export default class PointDetail extends Component<Props> {
 
     constructor(props){
         super(props);
@@ -21,7 +21,7 @@ export default class Scene extends Component<Props> {
 
     render() {
         return (
-            <Image style={styles.wrap} source= {require('../../images/poetry-bg-3.jpg')}>
+            <Image style={styles.wrap} source= {require('../../images/poetry-bg-1.jpg')}>
 
             </Image>
         );

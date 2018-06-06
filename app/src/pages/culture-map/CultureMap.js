@@ -22,6 +22,18 @@ import Dimensions from 'Dimensions';
 
 export default class CultureMap extends Component {
 
+    // static navigationOptions = {
+        // title: '文化地图',
+        // headerTitle: <Button title="文化地图"/>,
+        // headerRight: (
+        //     <Button
+        //         onPress={() => alert('This is a button!')}
+        //         title="Info"
+        //         color="#fff"
+        //     />
+        // ),
+    // };
+
     constructor() {
         super();
 
@@ -97,6 +109,10 @@ export default class CultureMap extends Component {
                                 console.warn(e, 'error');
                             })
                     }} />
+                    <Button
+                        title='详情页'
+                        onPress={()=>{this.props.navigation.navigate('PointDetail')}}
+                    />
                 </View>
             </View>
         );
