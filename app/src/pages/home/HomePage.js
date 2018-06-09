@@ -4,7 +4,6 @@ import React ,{
 }from 'react';
 import {Animated, View, Easing, Image, TouchableOpacity, Dimensions, StyleSheet, Text} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
-import Person from "../person/Person";
 
 export default class HomePage extends Component{
     constructor (props) {
